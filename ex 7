@@ -1,0 +1,17 @@
+""" Excercise 7: List Comprehensions"""
+
+
+
+import random
+
+randomList = []
+listLength = int(input("Enter your list size: "))
+
+for i in range(listLength):
+    randomList.append(random.randint(1,100))
+
+print(randomList)
+# Find all even numbers in the list and make them into a list
+
+evenList = [i for i in randomList if i % 2 ==0]
+print(evenList)
