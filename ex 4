@@ -1,0 +1,14 @@
+""" Excercise 4: Divisor List Problem """
+
+
+
+
+userNumber = int(input("Type your number: "))
+
+divisorList = []
+
+for i in range(1, userNumber + 1):
+    if userNumber % i == 0:
+       divisorList.append(i)
+       
+print(divisorList)
