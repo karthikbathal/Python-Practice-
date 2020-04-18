@@ -1,0 +1,17 @@
+""" Excercise 6: Palindrome Check """
+
+
+
+yourWord = list(input("Enter your word: "))
+
+
+
+def palindromeCheck (yourWord):
+    flippedWord = yourWord[::-1]
+    if flippedWord == yourWord :
+        print("This word is a palindrome!!!")
+    else:
+        print("Your word is not a palindrome :(")
+        
+        
+palindromeCheck(yourWord)
