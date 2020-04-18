@@ -1,0 +1,29 @@
+""" Excercise 9: Number Guessing Game """
+
+import random
+
+def guessGame ():
+    userNumber = int(input("Enter a number between 0 and 10: "))
+    computerNumber = random.randint(0,10) 
+    
+    if userNumber >= 10 or userNumber <= 0 :
+        print("Number outside Range")
+    elif computerNumber == userNumber :
+        print("You guessed Right!")
+    elif computerNumber > userNumber :
+        print("You guessed low")
+    else :
+        print("You guessed high")
+        
+        
+x = 1
+  
+while x == 1 :
+    
+    guessGame()
+    playagain = input("Do you want to try again? (yes or no): ")
+    if playagain == "yes" :
+        x = 1
+    else:
+        print("Have a nice day!")
+        break
