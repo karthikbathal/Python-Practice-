@@ -1,22 +1,28 @@
-""" Excercise 5: List Overlap Problem """
+""" Excercise 5: List Overlap """
 
 import random
 
-c = random.list(0,10)
+c = random.randint(2, 10)
 
-print(c)
+listSize1 = int(input("enter your desired list length for first list: "))
+listSize2 = int(input("enter your desired list length for second list: "))
 
+randList1 = []
+randList2 = []
 
+for i in range(listSize1) :
+    randList1.append(random.randint(1, 100))
+print(randList1)
+    
+for i in range(listSize2) :
+    randList2.append(random.randint(1, 100))
+print(randList2)
 
-
-
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
 overlapList = []
 
-for i in a :
-    if i == i in b :
+for i in randList1:
+    if i in randList2 and i not in overlapList:
         overlapList.append(i)
         
 print(overlapList)
