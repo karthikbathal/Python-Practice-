@@ -1,0 +1,17 @@
+""" Exercise 15: Return Reversed Strings """
+
+
+def stringReverser(yourString):
+    chunks = yourString.split(" ")
+    chunks.reverse()
+    reverse = ""
+    for i in range(len(chunks)):
+        if i <  len(chunks):
+          reverse = reverse + chunks[i] + " " 
+        else:
+            reverse = reverse + chunks[i]
+    print(reverse)
+
+yourString = input("Enter your sentence: ")
+
+stringReverser(yourString)
